@@ -1,142 +1,258 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ExpressVPN demo landing page — secure, private, and fast VPN access."
+    />
+    <meta name="theme-color" content="#001D2F" />
     <title>ExpressVPN | Premium Access</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='100%25' height='100%25' fill='%23001D2F'/%3E%3Ctext x='50%25' y='50%25' fill='%23ffffff' font-size='28' text-anchor='middle' dominant-baseline='middle' font-family='Arial, sans-serif'%3EEV%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <nav class="navbar">
-        <div class="container nav-content">
-            <div class="logo">ExpressVPN<span class="dot">.</span></div>
-            <div class="nav-links">
-                <a href="https://www.expressvpn.com/what-is-a-vpn" class="nav-item" target="_blank" rel="noopener noreferrer">What is a VPN?</a>
-                <a href="https://www.expressvpn.com/download" class="nav-item" target="_blank" rel="noopener noreferrer">Download</a>
-                <a href="https://www.expressvpn.com/english" class="lang-btn" target="_blank" rel="noopener noreferrer" aria-label="Switch language to English">🌐 English</a>
-            </div>
+      <div class="container nav-content">
+        <div class="logo">ExpressVPN<span class="dot">.</span></div>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger"></span>
+        </button>
+        <div id="nav-links" class="nav-links" role="navigation">
+          <a
+            href="https://www.expressvpn.com/what-is-a-vpn"
+            class="nav-item"
+            target="_blank"
+            rel="noopener noreferrer"
+            >What is a VPN?</a
+          >
+          <a
+            href="https://www.expressvpn.com/download"
+            class="nav-item"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Download</a
+          >
+          <a
+            href="https://www.expressvpn.com/english"
+            class="lang-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Switch language to English"
+            >🌐 English</a
+          >
         </div>
+      </div>
     </nav>
 
     <header class="hero">
-        <div class="container hero-container">
-            <div class="hero-text">
-                <h1>The VPN that <span class="highlight">just works.</span></h1>
-                <p class="hero-sub">Go further with the world's #1 trusted leader in privacy.</p>
-                <div class="hero-actions">
-                    <a href="https://www.expressvpn.com/order" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer" aria-label="Order ExpressVPN">Get ExpressVPN ➝</a>
-                    <span class="guarantee">30-Day Money-Back Guarantee</span>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <img src="https://placehold.co/800x600/e74c3c/white?text=Artistic+Travel+Scene" alt="Hero Illustration">
-            </div>
+      <div class="container hero-container">
+        <div class="hero-text reveal">
+          <h1>The VPN that <span class="highlight">just works.</span></h1>
+          <p class="hero-sub">
+            Go further with the world's #1 trusted leader in privacy.
+          </p>
+          <div class="hero-actions">
+            <a
+              href="https://www.expressvpn.com/order"
+              class="btn btn-primary btn-lg"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Order ExpressVPN"
+              >Get ExpressVPN ➝</a
+            >
+            <span class="guarantee">30-Day Money-Back Guarantee</span>
+          </div>
         </div>
-        <svg class="hero-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,165.3C672,139,768,117,864,128C960,139,1056,181,1152,197.3C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
+        <div class="hero-visual reveal">
+          <picture data-vpn-webp="" data-vpn-jpg="Images/VPN.jpg">
+            <source type="image/webp" srcset="">
+            <source type="image/jpeg" srcset="">
+            <img src="Images/VPN.jpg" alt="Hero illustration - VPN" />
+          </picture>
+        </div>
+      </div>
+      <svg
+        class="hero-wave"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,165.3C672,139,768,117,864,128C960,139,1056,181,1152,197.3C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
     </header>
 
-    <main>
-        <section class="section container">
-            <div class="card-layout">
-                <div class="visual-box">
-                    <img src="https://placehold.co/600x500/2c3e50/white?text=Secure+Wall" alt="Security">
-                </div>
-                <div class="content-box">
-                    <div class="badge">Security</div>
-                    <h2>Secure access, worldwide</h2>
-                    <p>Connect reliably from anywhere, to anywhere. Our network of high-speed servers across 94 countries puts you in control.</p>
-                    <a href="https://www.expressvpn.com/download" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="Download ExpressVPN">Get Started</a>
-                </div>
-            </div>
-        </section>
+    <main id="main-content" role="main">
+      <section class="section container reveal">
+        <div class="card-layout">
+          <div class="visual-box reveal">
+            <picture data-vpn-webp="" data-vpn-jpg="Images/SecureWall.jpg">
+              <source type="image/webp" srcset="">
+              <source type="image/jpeg" srcset="">
+              <img src="Images/SecureWall.jpg" alt="Security - Secure Wall" />
+            </picture>
+          </div>
+          <div class="content-box reveal">
+            <div class="badge">Security</div>
+            <h2>Secure access, worldwide</h2>
+            <p>
+              Connect reliably from anywhere, to anywhere. Our network of
+              high-speed servers across 94 countries puts you in control.
+            </p>
+            <a
+              href="https://www.expressvpn.com/download"
+              class="btn btn-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download ExpressVPN"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </section>
 
-        <section class="section container">
-            <div class="card-layout reverse">
-                <div class="visual-box">
-                    <img src="https://placehold.co/600x500/f39c12/white?text=Cozy+Lamp" alt="Privacy">
-                </div>
-                <div class="content-box">
-                    <div class="badge">Privacy</div>
-                    <h2>One click to a safer internet</h2>
-                    <p>Going online doesn't have to mean being exposed. Whether you're shopping from your desk or just connecting at a cafe, stay private.</p>
-                </div>
-            </div>
-        </section>
+      <section class="section container reveal">
+        <div class="card-layout reverse">
+          <div class="visual-box reveal">
+            <picture data-vpn-webp="" data-vpn-jpg="Images/safer internet.jpg">
+              <source type="image/webp" srcset="">
+              <source type="image/jpeg" srcset="">
+              <img src="Images/safer internet.jpg" alt="Privacy — Safer Internet" />
+            </picture>
+          </div>
+          <div class="content-box reveal">
+            <div class="badge">Privacy</div>
+            <h2>One click to a safer internet</h2>
+            <p>
+              Going online doesn't have to mean being exposed. Whether you're
+              shopping from your desk or just connecting at a cafe, stay
+              private.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section class="section container">
-            <div class="card-layout">
-                <div class="visual-box">
-                    <img src="https://placehold.co/600x500/8e44ad/white?text=Multi+Device" alt="Devices">
-                </div>
-                <div class="content-box">
-                    <div class="badge">Compatibility</div>
-                    <h2>Use ExpressVPN on every device</h2>
-                    <p>Phone, tablet, computer, router—no matter where you are or what devices you're using, a single subscription covers them all.</p>
-                    <div class="tags">
-                        <span>Win</span><span>Mac</span><span>iOS</span><span>Android</span>
-                    </div>
-                    <a href="https://www.expressvpn.com/apps" class="link-arrow" target="_blank" rel="noopener noreferrer" aria-label="See all ExpressVPN apps">See all apps &rarr;</a>
-                </div>
+      <section class="section container reveal">
+        <div class="card-layout">
+          <div class="visual-box reveal">
+            <picture data-vpn-webp="" data-vpn-jpg="Images/Multi-device.jpg">
+              <source type="image/webp" srcset="">
+              <source type="image/jpeg" srcset="">
+              <img src="Images/Multi-device.jpg" alt="Devices - Multi Device" />
+            </picture>
+          </div>
+          <div class="content-box reveal">
+            <div class="badge">Compatibility</div>
+            <h2>Use ExpressVPN on every device</h2>
+            <p>
+              Phone, tablet, computer, router—no matter where you are or what
+              devices you're using, a single subscription covers them all.
+            </p>
+            <div class="tags">
+              <span>Win</span><span>Mac</span><span>iOS</span
+              ><span>Android</span>
             </div>
-        </section>
+            <a
+              href="https://www.expressvpn.com/apps"
+              class="link-arrow"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="See all ExpressVPN apps"
+              >See all apps &rarr;</a
+            >
+          </div>
+        </div>
+      </section>
 
-        <section class="benefits-section">
-            <div class="container">
-                <div class="grid-3">
-                    <div class="benefit-card">
-                        <div class="icon-glow yellow">🔒</div>
-                        <h3>Data Protection</h3>
-                        <p>Take charge of your online privacy with best-in-class encryption.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="icon-glow blue">🌍</div>
-                        <h3>Global Access</h3>
-                        <p>Experience the internet the way it's meant to be. Seamlessly.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="icon-glow red">⚡</div>
-                        <h3>Lightning Speed</h3>
-                        <p>Our VPN network is built for speed, powered by next-gen tech.</p>
-                    </div>
-                </div>
+      <section class="benefits-section">
+        <div class="container">
+          <div class="grid-3">
+            <div class="benefit-card reveal">
+              <div class="icon-glow yellow">🔒</div>
+              <h3>Data Protection</h3>
+              <p>
+                Take charge of your online privacy with best-in-class
+                encryption.
+              </p>
             </div>
-        </section>
+            <div class="benefit-card reveal">
+              <div class="icon-glow blue">🌍</div>
+              <h3>Global Access</h3>
+              <p>
+                Experience the internet the way it's meant to be. Seamlessly.
+              </p>
+            </div>
+            <div class="benefit-card reveal">
+              <div class="icon-glow red">⚡</div>
+              <h3>Lightning Speed</h3>
+              <p>
+                Our VPN network is built for speed, powered by next-gen tech.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer-dark">
-        <div class="container footer-content">
-            <div class="footer-text">
-                <h2>Ultra-fast servers around the globe</h2>
-                <div class="stats-row">
-                    <div class="stat">
-                        <strong>160</strong>
-                        <span>Locations</span>
-                    </div>
-                    <div class="stat">
-                        <strong>94</strong>
-                        <span>Countries</span>
-                    </div>
-                    <div class="stat">
-                        <strong>∞</strong>
-                        <span>Bandwidth</span>
-                    </div>
-                </div>
-                <a href="https://www.expressvpn.com/locations" class="btn btn-outline" target="_blank" rel="noopener noreferrer" aria-label="View server locations">View Server List</a>
+      <div class="container footer-content">
+        <div class="footer-text reveal">
+          <h2>Ultra-fast servers around the globe</h2>
+          <div class="stats-row">
+            <div class="stat">
+              <strong
+                ><span class="js-count" data-target="160">160</span></strong
+              >
+              <span>Locations</span>
             </div>
-            <div class="footer-map">
-                <img src="https://placehold.co/600x400/1a252f/7f8c8d?text=World+Map+Dark" alt="World Map">
+            <div class="stat">
+              <strong><span class="js-count" data-target="94">94</span></strong>
+              <span>Countries</span>
             </div>
+            <div class="stat">
+              <strong>∞</strong>
+              <span>Bandwidth</span>
+            </div>
+          </div>
+          <a
+            href="https://www.expressvpn.com/locations"
+            class="btn btn-outline"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View server locations"
+            >View Server List</a
+          >
         </div>
-        <div class="copyright">
-            © 2024 ExpressVPN Demo Project.
+        <div class="footer-map reveal">
+          <picture data-vpn-webp="Images/world-network.webp" data-vpn-jpg="">
+            <source type="image/webp" srcset="">
+            <source type="image/jpeg" srcset="">
+            <img src="Images/world-network.webp" alt="World map — Network" />
+          </picture>
         </div>
+      </div>
+      <div class="copyright">© 2024 ExpressVPN Demo Project.</div>
     </footer>
 
-</body>
+    <script src="script.js" defer></script>
+  </body>
 </html>
